@@ -1,6 +1,6 @@
 var bacteriaData = require('./bacteriaData');
 
-
+var plotly = require('plotly')("Garmega", "un5vj4y2i6");
 (function() {
 
 	console.log(bacteriaData);
@@ -28,7 +28,10 @@ var bacteriaData = require('./bacteriaData');
 		}
 	];
 
-	Plotly.newPlot('graph', data);
+	var graphOptions = {filename: "basic-bar", fileopt: "overwrite"};
+	plotly.plot(data, graphOptions, function (err, msg) {
+    	console.log(msg);
+	});
 })();
 
 /**
