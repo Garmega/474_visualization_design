@@ -1,38 +1,53 @@
-var bacteriaData = require('./bacteriaData');
 
-var plotly = require('plotly')("Garmega", "un5vj4y2i6");
-(function() {
+$(document).ready(function () {
+	main();
+});
 
-	console.log(bacteriaData);
 
-	console.log(calculateAverageMIC(bacteriaData.bacteria[0]));
+class bacteria {
 
-	var xValues = [];
-	var yValues = [];
+	constructor() {
 
-	var bacteria = bacteriaData.bacteria;
-	for (var i = 0; i < bacteria.length; i++) {
-		var bacterium = bacteria[i];
-		xValues.push(calculateAverageMIC(bacterium));
-		yValues.push(bacterium.name);
-	};
+	}
+}
 
-	console.log(xValues);
-	console.log(yValues);
+function main() {
 
-	var data = [
-		{
-			x: xValues,
-			y: yValues,
-			type: 'bar'
-		}
-	];
+	console.log("main");
+	//$.get("./antibodies_data.csv");
 
-	var graphOptions = {filename: "basic-bar", fileopt: "overwrite"};
-	plotly.plot(data, graphOptions, function (err, msg) {
-    	console.log(msg);
-	});
-})();
+	//console.log($.csv.state);
+
+	// console.log(bacteriaData);
+
+	// console.log(calculateAverageMIC(bacteriaData.bacteria[0]));
+
+	// var xValues = [];
+	// var yValues = [];
+
+	// var bacteria = bacteriaData.bacteria;
+	// for (var i = 0; i < bacteria.length; i++) {
+	// 	var bacterium = bacteria[i];
+	// 	xValues.push(calculateAverageMIC(bacterium));
+	// 	yValues.push(bacterium.name);
+	// };
+
+	// console.log(xValues);
+	// console.log(yValues);
+
+	// var data = [
+	// 	{
+	// 		x: xValues,
+	// 		y: yValues,
+	// 		type: 'bar'
+	// 	}
+	// ];
+
+	// var graphOptions = {filename: "basic-bar", fileopt: "overwrite"};
+	// plotly.plot(data, graphOptions, function (err, msg) {
+ //    	console.log(msg);
+	// });
+};
 
 /**
 Grabs the average for the MIC value for each antibody of the
