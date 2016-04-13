@@ -1,5 +1,6 @@
 var bacteriaData = require('./bacteriaData');
 
+
 (function() {
 
 	console.log(bacteriaData);
@@ -27,7 +28,7 @@ var bacteriaData = require('./bacteriaData');
 		}
 	];
 
-	// Plotly.newPlot('graph', data);
+	Plotly.newPlot('graph', data);
 })();
 
 /**

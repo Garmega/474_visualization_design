@@ -6,15 +6,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "870"
+					"mic" : 870
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "1"
+					"mic" : 1
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "1.6"
+					"mic" : 1.6
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -24,15 +24,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "1"
+					"mic" : 1
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "2"
+					"mic" : 2
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.02"
+					"mic" : 0.02
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -42,15 +42,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "0.001"
+					"mic" : 0.001
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "0.01"
+					"mic" : 0.01
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.007"
+					"mic" : 0.007
 				}
 			],
 			"gramStainResult" : "positive" 
@@ -60,15 +60,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "0.005"
+					"mic" : 0.005
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "11"
+					"mic" : 11
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "10"
+					"mic" : 10
 				}
 			],
 			"gramStainResult" : "positive" 
@@ -78,15 +78,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "100"
+					"mic" : 100
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "0.4"
+					"mic" : 0.4
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.1"
+					"mic" : 0.1
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -96,15 +96,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "850"
+					"mic" : 850
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "1.2"
+					"mic" : 1.2
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "1"
+					"mic" : 1
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -114,15 +114,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "800"
+					"mic" : 800
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "5"
+					"mic" : 5
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "2"
+					"mic" : 2
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -132,15 +132,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "3"
+					"mic" : 3
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "0.1"
+					"mic" : 0.1
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.1"
+					"mic" : 0.1
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -150,15 +150,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "850"
+					"mic" : 850
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "2"
+					"mic" : 2
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.4"
+					"mic" : 0.4
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -168,15 +168,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "1"
+					"mic" : 1
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "0.4"
+					"mic" : 0.4
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.008"
+					"mic" : 0.008
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -186,15 +186,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "10"
+					"mic" : 10
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "0.8"
+					"mic" : 0.8
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.09"
+					"mic" : 0.09
 				}
 			],
 			"gramStainResult" : "negative" 
@@ -204,15 +204,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "0.007"
+					"mic" : 0.007
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "0.1"
+					"mic" : 0.1
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.001"
+					"mic" : 0.001
 				}
 			],
 			"gramStainResult" : "positive" 
@@ -222,15 +222,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "0.03"
+					"mic" : 0.03
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "0.03"
+					"mic" : 0.03
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.001"
+					"mic" : 0.001
 				}
 			],
 			"gramStainResult" : "positive" 
@@ -240,15 +240,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "1"
+					"mic" : 1
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "1"
+					"mic" : 1
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "0.1"
+					"mic" : 0.1
 				}
 			],
 			"gramStainResult" : "positive" 
@@ -258,15 +258,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "0.001"
+					"mic" : 0.001
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "14"
+					"mic" : 14
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "10"
+					"mic" : 10
 				}
 			],
 			"gramStainResult" : "positive" 
@@ -276,15 +276,15 @@ module.exports={
 			"antibodies" : [
 				{
 					"name" : "Penicilin",
-					"mic" : "0.005"
+					"mic" : 0.005
 				},
 				{
 					"name" : "Streptomycin",
-					"mic" : "10"
+					"mic" : 10
 				},
 				{
 					"name" : "Neomycin",
-					"mic" : "40"
+					"mic" : 40
 				}
 			],
 			"gramStainResult" : "positive" 
@@ -293,6 +293,7 @@ module.exports={
 }
 },{}],2:[function(require,module,exports){
 var bacteriaData = require('./bacteriaData');
+
 
 (function() {
 
@@ -321,7 +322,7 @@ var bacteriaData = require('./bacteriaData');
 		}
 	];
 
-	// Plotly.newPlot('graph', data);
+	Plotly.newPlot('graph', data);
 })();
 
 /**
