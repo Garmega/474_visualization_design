@@ -1,4 +1,34 @@
-var bacteriaData = require('./bacteriaData.json');
+var bacteriaData = require('./bacteriaData');
+
+(function() {
+
+	console.log(bacteriaData);
+
+	console.log(calculateAverageMIC(bacteriaData.bacteria[0]));
+
+	var xValues = [];
+	var yValues = [];
+
+	var bacteria = bacteriaData.bacteria;
+	for (var i = 0; i < bacteria.length; i++) {
+		var bacterium = bacteria[i];
+		xValues.push(calculateAverageMIC(bacterium));
+		yValues.push(bacterium.name);
+	};
+
+	console.log(xValues);
+	console.log(yValues);
+
+	var data = [
+		{
+			x: xValues,
+			y: yValues,
+			type: 'bar'
+		}
+	];
+
+	// Plotly.newPlot('graph', data);
+})();
 
 /**
 Grabs the average for the MIC value for each antibody of the
@@ -15,7 +45,7 @@ function calculateAverageMIC(bacterium) {
 		sum += antibodies[i].mic;
 	}
 
-	return sum / antibodies.length;
+	return (sum / antibodies.length);
 }
 
 /**
@@ -32,7 +62,7 @@ function calculateAverageForAntibody(bacteria, antibodyName) {
 	for (var i = 0; i < bacteria.length; i++) {
 		var antibodies = bacteria[i].antibodies;
 		for (var j = 0; j < antibodies.length; j++) {
-			if (antibodies[j].name == antibodyName {
+			if (antibodies[j].name == antibodyName) {
 				sum += antibodies[j].mic;
 			}
 		}
@@ -52,7 +82,7 @@ function getAllWithGramResult(result) {
 	var list = [];
 	for (var i = 0; i < bacteria.length; i++) {
 		if (bacteria[i].gramStainResult == result) {
-			list.add(bacteria[i]);
+			list.push(bacteria[i]);
 		}
 	}
 
