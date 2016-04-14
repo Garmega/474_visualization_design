@@ -1,7 +1,12 @@
 var bacteriaData = require('./bacteriaData');
+var plotly = require('./plotly-latest.min.js');
+var $ = require('jQuery');
 
-var plotly = require('plotly')("Garmega", "un5vj4y2i6");
-(function() {
+$( document ).ready(function() {
+  main();
+});
+
+function main() {
 
 	console.log(bacteriaData);
 
@@ -28,11 +33,10 @@ var plotly = require('plotly')("Garmega", "un5vj4y2i6");
 		}
 	];
 
-	var graphOptions = {filename: "basic-bar", fileopt: "overwrite"};
-	plotly.plot(data, graphOptions, function (err, msg) {
-    	console.log(msg);
-	});
-})();
+	var layout = {barmode: 'group'};
+
+	plotly.newPlot("test", data);
+};
 
 /**
 Grabs the average for the MIC value for each antibody of the
