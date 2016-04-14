@@ -3,334 +3,259 @@ module.exports={
 	"bacteria": [
 		{
 			"name" : "Aerobacter aerogenes",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 870
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 1
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 1.6
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 870,
+				"Streptomycin": 1,
+				"Neomycin": 1.6
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Brucella abortus",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 1
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 2
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.02
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 1,
+				"Streptomycin": 2,
+				"Neomycin": 0.02
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Brucella anthracis",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 0.001
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 0.01
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.007
-				}
-			],
-			"gramStainResult" : "positive" 
+			"antibodies" : {
+				"Penicilin": 0.001,
+				"Streptomycin": 0.01,
+				"Neomycin": 0.007
+			},
+			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Diplococcus pneumoniae",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 0.005
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 11
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 10
-				}
-			],
-			"gramStainResult" : "positive" 
+			"antibodies" : {
+				"Penicilin": 0.005,
+				"Streptomycin": 11,
+				"Neomycin": 10
+			},
+			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Escherichia coli",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 100
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 0.4
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.1
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 100,
+				"Streptomycin": 0.4,
+				"Neomycin": 0.1
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Klebsiella pneumoniae",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 850
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 1.2
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 1
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 850,
+				"Streptomycin": 1.2,
+				"Neomycin": 1
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Mycobacterium tuberculosis",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 800
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 5
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 2
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 800,
+				"Streptomycin": 5,
+				"Neomycin": 2
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Proteus vulgaris",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 3
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 0.1
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.1
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 3,
+				"Streptomycin": 0.1,
+				"Neomycin": 0.1
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Pseudomonas aeruginosa",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 850
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 2
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.4
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 850,
+				"Streptomycin": 2,
+				"Neomycin": 0.4
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Salmonella (Eberthella) typhosa",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 1
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 0.4
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.008
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 1,
+				"Streptomycin": 0.4,
+				"Neomycin": 0.008
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Salmonella schottmuelleri",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 10
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 0.8
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.09
-				}
-			],
-			"gramStainResult" : "negative" 
+			"antibodies" : {
+				"Penicilin": 10,
+				"Streptomycin": 0.8,
+				"Neomycin": 0.09
+			},
+			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Staphylococcus albus",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 0.007
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 0.1
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.001
-				}
-			],
-			"gramStainResult" : "positive" 
+			"antibodies" : {
+				"Penicilin": 0.007,
+				"Streptomycin": 0.1,
+				"Neomycin": 0.001
+			},
+			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Staphylococcus aureus",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 0.03
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 0.03
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.001
-				}
-			],
-			"gramStainResult" : "positive" 
+			"antibodies" : {
+				"Penicilin": 0.03,
+				"Streptomycin": 0.03,
+				"Neomycin": 0.001
+			},
+			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Streptococcus fecalis",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 1
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 1
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 0.1
-				}
-			],
-			"gramStainResult" : "positive" 
+			"antibodies" : {
+				"Penicilin": 1,
+				"Streptomycin": 1,
+				"Neomycin": 0.1
+			},
+			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Streptococcus hemolyticus",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 0.001
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 14
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 10
-				}
-			],
-			"gramStainResult" : "positive" 
+			"antibodies" : {
+				"Penicilin": 0.001,
+				"Streptomycin": 14,
+				"Neomycin": 10
+			},
+			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Streptococcus viridans",
-			"antibodies" : [
-				{
-					"name" : "Penicilin",
-					"mic" : 0.005
-				},
-				{
-					"name" : "Streptomycin",
-					"mic" : 10
-				},
-				{
-					"name" : "Neomycin",
-					"mic" : 40
-				}
-			],
-			"gramStainResult" : "positive" 
+			"antibodies" : {
+				"Penicilin": 0.005,
+				"Streptomycin": 10,
+				"Neomycin": 40
+			},
+			"gramStainResult" : "positive"
 		},
 	]
 }
+
 },{}],2:[function(require,module,exports){
 var bacteriaData = require('./bacteriaData');
 var plotly = require('./plotly-latest.min.js');
 var $ = require('jQuery');
 
+var bacteria = [];
+
+class Bacterium {
+    constructor(name, antibodies, gramStain) {
+        this.name = name;
+        this.antibodies = antibodies;
+        this.gramStain = gramStain;
+    }
+
+    get averageMICValues() {
+        return this.calcAverageMICValues();
+    }
+
+    calcAverageMICValues() {
+        var sum = 0;
+        var keys = Object.keys(this.antibodies);
+        //console.log(keys);
+        for (var i = 0; i < keys.length; i++) {
+            //console.log(antibodies[keys[i]]);
+            sum += this.antibodies[keys[i]];
+        }
+
+        return (sum / keys.length);
+    }
+}
+
 $( document ).ready(function() {
-  main();
+    main();
 });
 
 function main() {
+    var bacteriaList = bacteriaData.bacteria;
+    for (var i = 0; i < bacteriaList.length; i++) {
+        var bacterium = bacteriaList[i];
+        var antibodyData = bacterium.antibodies;
+        var keys = Object.keys(antibodyData);
 
-	console.log(bacteriaData);
+        var antibodies = {};
+        for (var j = 0; j < keys.length; j++) {
+            antibodies[keys[j]] = antibodyData[keys[j]];
+        }
 
-	console.log(calculateAverageMIC(bacteriaData.bacteria[0]));
+        bacteria.push(new Bacterium(bacterium.name, antibodies, bacterium.gramStainResult));
+    };
 
-	var xValues = [];
-	var yValues = [];
-
-	var bacteria = bacteriaData.bacteria;
-	for (var i = 0; i < bacteria.length; i++) {
-		var bacterium = bacteria[i];
-		xValues.push(calculateAverageMIC(bacterium));
-		yValues.push(bacterium.name);
-	};
-
-	console.log(xValues);
-	console.log(yValues);
-
-	var data = [
-		{
-			x: xValues,
-			y: yValues,
-			type: 'bar'
-		}
-	];
-
-	var layout = {barmode: 'group'};
-
-	plotly.newPlot("test", data);
+    //console.log(bacteria);
+    //console.log(calculateAverageMIC(bacteria[0]));
+    visualization1();
 };
+
+function visualization1() {
+    var xValues = [];
+    var yValues = [];
+
+    for (var i = 0; i < bacteria.length; i++) {
+        var bacterium = bacteria[i];
+        console.log(bacterium);
+        xValues.push(bacterium.averageMICValues);
+        yValues.push(bacterium.name);
+    };
+
+    var data = [{
+        x: xValues,
+        y: yValues,
+        type: 'bar',
+        orientation: 'h'
+    }];
+
+    var layout = {
+        title: 'MIC mean of antibodies',
+        margin: {
+            l: 250
+        },
+        xaxis: {
+            title: 'MIC'
+        },
+        yaxis: {
+            title: 'Bacterium'
+        }
+    }
+
+    plotly.newPlot("graph", data, layout);
+}
+
+function visualization2() {
+    var name = [];
+    var penicilinMIC = [];
+    var streptomycinMIC = [];
+    var neomycinMIC = [];
+    var gramStaining = [];
+
+    var bacteria = bacteriaData.bacteria;
+    for (var i = 0; i < bacteria.length; i++) {
+        var bacterium = bacteria[i];
+        name.push(bacterium.name);
+        penicilinMIC.push(bacterium.antibodies[0].mic);
+        streptomycinMIC.push(bacterium.antibodies[1].mic);
+        neomycinMIC.push(bacterium.antibodies[2].mic);
+        gramStaining.push(bacterium.gramStainResult);
+    }
+
+
+}
 
 /**
 Grabs the average for the MIC value for each antibody of the
@@ -343,15 +268,18 @@ given bacterium
 function calculateAverageMIC(bacterium) {
 	var sum = 0;
 	var antibodies = bacterium.antibodies;
-	for (var i = 0; i < antibodies.length; i++) {
-		sum += antibodies[i].mic;
+    var keys = Object.keys(antibodies);
+    //console.log(keys);
+	for (var i = 0; i < keys.length; i++) {
+        //console.log(antibodies[keys[i]]);
+        sum += antibodies[keys[i]];
 	}
 
-	return (sum / antibodies.length);
+	return (sum / keys.length);
 }
 
 /**
-Grabs the average MIC value for a specific antibody across all 
+Grabs the average MIC value for a specific antibody across all
 given bacterium
 
 @param bacterium: An array of bacterium
@@ -365,7 +293,7 @@ function calculateAverageForAntibody(bacteria, antibodyName) {
 		var antibodies = bacteria[i].antibodies;
 		for (var j = 0; j < antibodies.length; j++) {
 			if (antibodies[j].name == antibodyName) {
-				sum += antibodies[j].mic;
+				sum += antibodies[j];
 			}
 		}
 	}
@@ -390,6 +318,7 @@ function getAllWithGramResult(result) {
 
 	return list;
 }
+
 },{"./bacteriaData":1,"./plotly-latest.min.js":4,"jQuery":3}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.3
