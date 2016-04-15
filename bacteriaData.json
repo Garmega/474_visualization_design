@@ -3,144 +3,144 @@
 		{
 			"name" : "Aerobacter aerogenes",
 			"antibodies" : {
-				"Penicilin": 870,
-				"Streptomycin": 1,
-				"Neomycin": 1.6
+				"penicilin": 870,
+				"streptomycin": 1,
+				"neomycin": 1.6
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Brucella abortus",
 			"antibodies" : {
-				"Penicilin": 1,
-				"Streptomycin": 2,
-				"Neomycin": 0.02
+				"penicilin": 1,
+				"streptomycin": 2,
+				"neomycin": 0.02
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Brucella anthracis",
 			"antibodies" : {
-				"Penicilin": 0.001,
-				"Streptomycin": 0.01,
-				"Neomycin": 0.007
+				"penicilin": 0.001,
+				"streptomycin": 0.01,
+				"neomycin": 0.007
 			},
 			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Diplococcus pneumoniae",
 			"antibodies" : {
-				"Penicilin": 0.005,
-				"Streptomycin": 11,
-				"Neomycin": 10
+				"penicilin": 0.005,
+				"streptomycin": 11,
+				"neomycin": 10
 			},
 			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Escherichia coli",
 			"antibodies" : {
-				"Penicilin": 100,
-				"Streptomycin": 0.4,
-				"Neomycin": 0.1
+				"penicilin": 100,
+				"streptomycin": 0.4,
+				"neomycin": 0.1
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Klebsiella pneumoniae",
 			"antibodies" : {
-				"Penicilin": 850,
-				"Streptomycin": 1.2,
-				"Neomycin": 1
+				"penicilin": 850,
+				"streptomycin": 1.2,
+				"neomycin": 1
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Mycobacterium tuberculosis",
 			"antibodies" : {
-				"Penicilin": 800,
-				"Streptomycin": 5,
-				"Neomycin": 2
+				"penicilin": 800,
+				"streptomycin": 5,
+				"neomycin": 2
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Proteus vulgaris",
 			"antibodies" : {
-				"Penicilin": 3,
-				"Streptomycin": 0.1,
-				"Neomycin": 0.1
+				"penicilin": 3,
+				"streptomycin": 0.1,
+				"neomycin": 0.1
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Pseudomonas aeruginosa",
 			"antibodies" : {
-				"Penicilin": 850,
-				"Streptomycin": 2,
-				"Neomycin": 0.4
+				"penicilin": 850,
+				"streptomycin": 2,
+				"neomycin": 0.4
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Salmonella (Eberthella) typhosa",
 			"antibodies" : {
-				"Penicilin": 1,
-				"Streptomycin": 0.4,
-				"Neomycin": 0.008
+				"penicilin": 1,
+				"streptomycin": 0.4,
+				"neomycin": 0.008
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Salmonella schottmuelleri",
 			"antibodies" : {
-				"Penicilin": 10,
-				"Streptomycin": 0.8,
-				"Neomycin": 0.09
+				"penicilin": 10,
+				"streptomycin": 0.8,
+				"neomycin": 0.09
 			},
 			"gramStainResult" : "negative"
 		},
 		{
 			"name" : "Staphylococcus albus",
 			"antibodies" : {
-				"Penicilin": 0.007,
-				"Streptomycin": 0.1,
-				"Neomycin": 0.001
+				"penicilin": 0.007,
+				"streptomycin": 0.1,
+				"neomycin": 0.001
 			},
 			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Staphylococcus aureus",
 			"antibodies" : {
-				"Penicilin": 0.03,
-				"Streptomycin": 0.03,
-				"Neomycin": 0.001
+				"penicilin": 0.03,
+				"streptomycin": 0.03,
+				"neomycin": 0.001
 			},
 			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Streptococcus fecalis",
 			"antibodies" : {
-				"Penicilin": 1,
-				"Streptomycin": 1,
-				"Neomycin": 0.1
+				"penicilin": 1,
+				"streptomycin": 1,
+				"neomycin": 0.1
 			},
 			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Streptococcus hemolyticus",
 			"antibodies" : {
-				"Penicilin": 0.001,
-				"Streptomycin": 14,
-				"Neomycin": 10
+				"penicilin": 0.001,
+				"streptomycin": 14,
+				"neomycin": 10
 			},
 			"gramStainResult" : "positive"
 		},
 		{
 			"name" : "Streptococcus viridans",
 			"antibodies" : {
-				"Penicilin": 0.005,
-				"Streptomycin": 10,
-				"Neomycin": 40
+				"penicilin": 0.005,
+				"streptomycin": 10,
+				"neomycin": 40
 			},
 			"gramStainResult" : "positive"
 		},
