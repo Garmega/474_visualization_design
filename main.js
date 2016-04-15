@@ -1,44 +1,21 @@
 var bacteriaData = require('./bacteriaData');
 var plotly = require('./plotly-latest.min.js');
 var $ = require('jQuery');
-
 var bacteria = [];
 
-class Bacterium {
-    constructor(name, antibodies, gramStain) {
-        this.name = name;
-        this.antibodies = antibodies;
-        this.gramStain = gramStain;
-    }
-
-    get averageMICValues() {
-        return this.calcAverageMICValues();
-    }
-
-    /**
-    Grabs the average for the MIC value for each antibody of the bacterium
-    @param bacteria: A single bacterium object
-    @return A double(?) representing the average of all MIC for the given bacterium
-    */
-    calcAverageMICValues() {
-        var sum = 0;
-        var keys = Object.keys(this.antibodies);
-        //console.log(keys);
-        for (var i = 0; i < keys.length; i++) {
-            //console.log(antibodies[keys[i]]);
-            sum += this.antibodies[keys[i]];
-        }
-
-        return (sum / keys.length);
-    }
-}
 
 $( document ).ready(function() {
-    main();
+    bacteria = importData();
+    if (bacteria.length > 0) {
+        visualization1();
+        visualization2();
+        visualization3();
+    }
 });
 
-function main() {
+function importData() {
     var bacteriaList = bacteriaData.bacteria;
+    var result = [];
     for (var i = 0; i < bacteriaList.length; i++) {
         var bacterium = bacteriaList[i];
         var antibodyData = bacterium.antibodies;
@@ -49,15 +26,11 @@ function main() {
             antibodies[keys[j]] = antibodyData[keys[j]];
         }
 
-        bacteria.push(new Bacterium(bacterium.name, antibodies, bacterium.gramStainResult));
+        result.push(new Bacterium(bacterium.name, antibodies, bacterium.gramStainResult));
     };
 
-    //console.log(bacteria);
-    //console.log(calculateAverageMIC(bacteria[0]));
-    visualization1();
-    visualization2();
-    visualization3();
-};
+    return result;
+}
 
 function visualization1() {
     var xValues = [];
@@ -227,45 +200,40 @@ function sortAndPlot(target, type) {
     plotly.newPlot(target, data, layout);
 }
 
-/**
-BROKEN
-Grabs the average MIC value for a specific antibody across all
-given bacterium
-
-@param bacterium: An array of bacterium
-@param antibodyName: Name for the antibody in question.
-
-@return: A double(?) representing the average of all values for given antibody
-*/
-function calculateAverageForAntibody(bacteria, antibodyName) {
-	var sum = 0;
-	for (var i = 0; i < bacteria.length; i++) {
-		var antibodies = bacteria[i].antibodies;
-		for (var j = 0; j < antibodies.length; j++) {
-			if (antibodies[j].name == antibodyName) {
-				sum += antibodies[j];
-			}
-		}
-	}
-
-	return sum / bacteria.length;
-}
 
 /**
-BROKEN
-Grabs all bacteria that matches the gram stain result
-
-@param result: The desired result to match
-
-@return: An array of bacterium that matches the result.
+Internal class used to hold information about a bacterium. 
 */
-function getAllWithGramResult(result) {
-	var list = [];
-	for (var i = 0; i < bacteria.length; i++) {
-		if (bacteria[i].gramStainResult == result) {
-			list.push(bacteria[i]);
-		}
-	}
+class Bacterium {
+    /**
+    @param name: Name of the bacterium.
+    @param antibodies: Map of antibodies mapped to their MIC values.
+    @param gramStain: The Gram stain test result.
+    */
+    constructor(name, antibodies, gramStain) {
+        this.name = name;
+        this.antibodies = antibodies;
+        this.gramStain = gramStain;
+    }
 
-	return list;
+    get averageMICValues() {
+        return this.calcAverageMICValues();
+    }
+
+    /**
+    Grabs the average for the MIC value for each antibody of the bacterium
+    @param bacteria: A single bacterium object
+    @return A double(?) representing the average of all MIC for the given bacterium
+    */
+    calcAverageMICValues() {
+        var sum = 0;
+        var keys = Object.keys(this.antibodies);
+        //console.log(keys);
+        for (var i = 0; i < keys.length; i++) {
+            //console.log(antibodies[keys[i]]);
+            sum += this.antibodies[keys[i]];
+        }
+
+        return (sum / keys.length);
+    }
 }
