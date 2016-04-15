@@ -13,6 +13,11 @@ $( document ).ready(function() {
     }
 });
 
+/**
+Imports data to be used with the visualizations from an outside JSON file.
+
+@return: An array of bacterium objects parsed from JSON.
+*/
 function importData() {
     var bacteriaList = bacteriaData.bacteria;
     var result = [];
@@ -32,6 +37,11 @@ function importData() {
     return result;
 }
 
+/**
+Produces a horizontal bar graph.
+Xaxis: Mean of all the MIC values associated with each bacterium
+Yaxis: Name of the bacterium.
+*/
 function visualization1() {
     var xValues = [];
     var yValues = [];
@@ -66,14 +76,28 @@ function visualization1() {
     plotly.newPlot("visualization1", data, layout);
 }
 
+/**
+Produces 3 bar graphs. 1 For each type of antibody.
+The data is sorted by descending MIC values
+and their gram stain result is also annotated next to each
+bar.
+*/
 function visualization2() {
     sortAndPlot("visualization2a", "penicilin");
     sortAndPlot("visualization2b", "streptomycin");
     sortAndPlot("visualization2c", "neomycin");
 }
 
+/**
+Produces a 3D plot
+Xaxis: penicillin MIC values
+Yaxis: streptomycin MIC values
+Zaxis: neomycin MIC values
+
+Each point is color coded according to their
+gram stain result. 
+*/
 function visualization3() {
-    var dataCopy = bacteria;
     var xValuesPos = [];
     var yValuesPos = [];
     var zValuesPos = [];
@@ -143,7 +167,14 @@ function visualization3() {
     plotly.newPlot('visualization3', data, layout);
 }
 
+/**
+Help function for visualization2
 
+Produces a bar graph for the given type of MIC values.
+The data is sorted by descending MIC values
+and their gram stain result is also annotated next to each
+bar.
+*/
 function sortAndPlot(target, type) {
     var dataCopy = bacteria;
     dataCopy.sort(function(a, b) {return a.antibodies[type] - b.antibodies[type]});
